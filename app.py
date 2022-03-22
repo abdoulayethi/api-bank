@@ -9,7 +9,7 @@ import re
 app = FastAPI()
 loaded_model = joblib.load('model.pkl')
 X = pd.read_csv("X.csv")
-X.head(1)
+X.head(2)
 
 @app.get('/')
 def index():
